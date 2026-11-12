@@ -7,17 +7,45 @@
 
     <title> Sistemas de blibiotecas </title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
         <ul>
-            <li><a href="index.html"></a><i class="bi bi-book"></i>Sistema de Biblioteca</a></li>
+            <li><a href="index.html"><i class="bi bi-book"></i>Sistema de Biblioteca</a></li>
+            <li><a href="#"><i class="bi bi-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="bi bi-book"></i>Autores</a></li>
+            <li><a href="#"><i class="bi bi-book"></i>Titulos</a></li>
+            <li><a href="#"><i class="bi bi-box2-fill"></i>Exemplares</a></li>
+            <li><a href="#"><i class="bi bi-people"></i>Usuarios</a></li>
+            <li><a href="#"><i class="bi bi-arrows"></i>Emprestimos</a></li>
+
         </ul>
     </nav>
+    <form action="#" method="get">
 
+        <h1>Cadastro de Usuários</h1>
+        <h3>Cadastro Novos Usuários na biblioteca</h3>
+        <fieldset>
+            <legend Dados Pessoais></legend>
+            <label for="nome">Nome Completo*</label>
+            <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="3"
+                maxlength="50" required>
+            <label for="telefone">telefone*</label>
+            <input class="form-control" type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" minlength="3"
+                maxlength="50" required>
+               <label for="email">e-mail*</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu email" minlength="3"
+                maxlength="50" required> 
+        </fieldset>
+
+    </form>
+
+</nav>
+
+    
 </body>
 
 </html>
